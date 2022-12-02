@@ -1,0 +1,30 @@
+/*--Box sizing rules---*/ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*--Remove default margin and padding--*/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/*--Set core root defaults--*/
+html:focus-within {
+   scroll-behavior: smooth;
+}
+
+/*--Make images easier to work with--*/
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+/*--Inherit fonts for input and buttons--*/
+input, button, textarea, select {
+    font: inherit;
+}
