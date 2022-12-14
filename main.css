@@ -1,3 +1,4 @@
+/* style according style guide */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 @import url(reset.css);
@@ -20,6 +21,7 @@
     --fw-700: 700;
     /* font-size: 14px; */
 }
+/* style according style guide end*/
 
 /* typography */
 html {
@@ -40,8 +42,3 @@ p {
 
 /* typography end */
 
-body { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
