@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url(reset.css); /* resets margin, padding and other properties */
+@import url(FM_part.css); /* style for FM part at the bottom of the page */
 
 :root {
-  /* Primary */
-  --dark-cyan: hsl(158, 36%, 37%);
-  --cream: hsl(30, 38%, 92%);
+  /* colors */
+  --clr-dark-cyan: hsl(158, 36%, 37%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-very-dark-blue: hsl(212, 21%, 14%);
+  --clr-dark-grayish-blue: hsl(228, 12%, 48%);
+  --clr-white: hsl(0, 0%, 100%);
 
-  /* Neutral */
-  --very-dark-blue: hsl(212, 21%, 14%);
-  --dark-grayish-blue: hsl(228, 12%, 48%);
-  --white: hsl(0, 0%, 100%);
+  /* fonts */
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Fraunces', sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
 }
+
+/* typography */
+
+p {
+  font-size: 14px;
+}
+
+/* typography end */
+
+/* ------------------- DESKTOP VIEW ------------- */
 
 body {
   width: 100%;
@@ -19,55 +35,50 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--cream);
-}
-
-p {
-  font-size: 14px;
+  background-color: var(--clr-cream);
 }
 
 main {
-  width: 65%;
+  width: 35rem;
   margin: auto;
   display: grid;
   grid-template-columns: 50% 50%;
   border-radius: 10px;
-  background-color: var(--white);
+  background-color: var(--clr-white);
 }
 
 img.image-product {
-  height: 100%;
   border-radius: 10px 0 0 10px;
 }
 
 article.text-article {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1.3rem;
   padding: 2rem;
 }
 
 h3.product-type {
-  font-size: 1rem;
-  font-family: 'Montserrat', Sans-Serif;
-  font-weight: 500;
-  letter-spacing: 5px;
-  color: var(--dark-grayish-blue);
+  font-size: 0.7rem;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-500);
+  letter-spacing: 6px;
+  color: var(--clr-dark-grayish-blue);
 }
 
 h1.product-name {
-  font-size: 3rem;
-  font-family: 'Fraunces', Sans-Serif;
-  font-weight: 700;
+  font-size: 2rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-700);
   line-height: 100%;
-  color: var(--very-dark-blue);
+  color: var(--clr-very-dark-blue);
 }
 
 div.product-description {
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-family: 'Montserrat';
-  color: var(--dark-grayish-blue);
+  font-size: 13px;
+  font-weight: var(--fw-500);
+  font-family: var(--ff-primary);
+  color: var(--clr-dark-grayish-blue);
   line-height: 1.5;
 }
 
@@ -75,18 +86,18 @@ div.prices {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  font-family: 'Fraunces', Sans-Serif;
+  font-family: var(--ff-secondary);
 }
 
 p.current-price {
-  font-size: 3rem;
-  color: var(--dark-cyan);
+  font-size: 1.8rem;
+  color: var(--clr-dark-cyan);
 }
 
 del.old-price {
-  font-size: 1.2rem;
-  font-family: 'Montserrat', Sans-Serif;
-  color: var(--dark-grayish-blue);
+  font-size: 0.8rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-dark-grayish-blue);
 }
 
 div.btn-container {
@@ -98,16 +109,16 @@ div.btn-container button {
   justify-content: center;
   align-items: center;
   width: inherit;
-  padding: 1rem 0;
-  gap: 1rem;
-  font-size: 1.5rem;
-  background-color: var(--dark-cyan);
+  padding: 0.8rem 0;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  background-color: var(--clr-dark-cyan);
   border-radius: 10px;
-  color: var(--white);
-  font-family: 'Montserrat', Sans-Serif;
-  font-weight: 700;
+  color: var(--clr-white);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-700);
   border: none;
- cursor: pointer;
+  cursor: pointer;
 }
 
 button:focus {
@@ -120,5 +131,7 @@ button:focus {
 }*/
 
 img.image-cart {
-  width: 1.3rem;
+  width: 1rem;
 }
+
+/* ----------------- DESKTOP VIEW END ---------------- */

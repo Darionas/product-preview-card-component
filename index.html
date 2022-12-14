@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-   <title>Frontend Mentor | Product preview card component</title>
-   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-   <link rel="stylesheet" href="main.css"/>
-   <link rel="stylesheet" href="reset.css"/>
-   <link rel="stylesheet" href="FM_part.css"/>
-</head>
-<body>
-   <main class="grid_container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Product preview card component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="grid_container">
       <picture class="img-container">
-         <source media="(max-width: 47.9375rem)" srcset="images/image-product-mobile.jpg">
-         <source media="(min-width: 48rem)" srcset="images/image-product-desktop.jpg">
-         <img class="image-product" src="images/image-product-desktop.jpg" alt="The product image" />
+        <source
+          media="(max-width: 47.9375rem)"
+          srcset="images/image-product-mobile.jpg" />
+        <source
+          media="(min-width: 48rem)"
+          srcset="images/image-product-desktop.jpg" />
+        <img
+          class="image-product"
+          src="images/image-product-desktop.jpg"
+          alt="The product image" />
       </picture>
       <article class="text-article">
-         <h3 class="product-type">PERFUME</h3>
-         <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
-         <div class="product-description">
-            A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of <span>CHANEL</span>.
-         </div>
-         <div class="prices">
-            <p class="current-price">$149.99</p>
-            <del class="old-price">$169.99</del>
-         </div>
-         <div class="btn-container">
-            <button type="button" class="add-to-cart"> <span class="cart-container"><img class="image-cart" src="images/icon-cart.svg" alt="The cart image"/></span> Add to Cart</button>
+        <h3 class="product-type">PERFUME</h3>
+        <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+        <div class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of <span>CHANEL</span>.
         </div>
-     </article>
-  </main>
-  <footer class="attribution">
-     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-     Coded by <a href="#">@Kareem Roqib, @Mahmud and @Darionas</a>.
-   </footer>
-</body>
+        <div class="prices">
+          <p class="current-price">$149.99</p>
+          <del class="old-price">$169.99</del>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="add-to-cart">
+            <span class="cart-container"
+              ><img
+                class="image-cart"
+                src="images/icon-cart.svg"
+                alt="The cart image"
+            /></span>
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">@Kareem Roqib, @Mahmud and @Darionas</a>.
+    </footer>
+  </body>
 </html>
