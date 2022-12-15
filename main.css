@@ -15,8 +15,8 @@
     --white: hsl(0, 0%, 100%);
   
   /* fonts */
-    --ff-primary: 'Montserrat', sans-serif;
-    --ff-secondary: 'Fraunces', serif;
+    --ff-primary: 'Montserrat', sans-serif; /*500, 700*/
+    --ff-secondary: 'Fraunces', serif; /*700*/
     --fw-500: 500;
     --fw-700: 700;
     /* font-size: 14px; */
@@ -42,3 +42,148 @@ p {
 
 /* typography end */
 
+body {
+  background-color: var(--cream);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------Mobile layout-------------------------*/
+/*
+* {
+  border: 2px solid green;
+}*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      'img-container'
+      'text-article'
+      'attribution';  
+  min-width: 37.5rem;
+  justify-items: center;
+  border: 2px solid green;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'image-product'; 
+    justify-items: center;
+    width: 75%;
+    margin: 2rem 0 0 0 ;
+    /*border: 2px solid green;*/ 
+}
+
+.image-product {
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    /*border: 2px solid green;*/
+}
+
+.text-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'product-type'
+        'product-name'
+        'product-description'
+        'prices'
+        'btn-container';
+    gap: 1rem;
+    justify-items: start;
+    width: 75%;
+    background-color: var(--white);
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+    padding: 2rem;
+}
+
+.text-article > * {
+    border: 2px solid green;
+}
+
+.product-type {
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+    font-weight: var(--fw-700);
+    color: var(--dark-grayish-blue);
+    letter-spacing: 0.3rem;
+}
+
+.product-name {
+    font-family: var(--ff-secondary);
+    font-size: 2.3rem;
+    color: var(--very-dark-blue);
+}
+
+.attribution {
+  justify-self: center;
+}
+
+/* style 1st component - mobile */
+
+
+/* style 2nd component - mobile */
+
+
+/* style 3rd component - mobile */
+
+/*---------------------Desktop layout-------------------------*/
+@media screen and (min-width: 48rem) {
+
+  * {
+    display: none;
+  }
+
+/* style 1st component - desktop */
+
+
+/* style 2nd component - desktop */
+
+
+/* style 3rd component - desktop */
+
+}
+
+
+/*------------------grid area names---------------------------*/
+
+.img-container {
+  grid-area: img-container;
+}
+
+.image-product {
+  grid-area: image-product;
+}
+
+.text-article {
+  grid-area: text-article;
+}
+
+.product-type {
+  grid-area: product-type;
+}
+
+.product-name {
+  grid-area: product-name;
+}
+
+.product-description {
+  grid-area: product-description;
+}
+
+.prices {
+  grid-area: prices;
+}
+
+.btn-container {
+  grid-area: btn-container;
+}
+
+.attribution {
+  grid-area: attribution;
+}
