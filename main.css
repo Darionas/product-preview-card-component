@@ -50,10 +50,6 @@ body {
 }
 
 /*---------------------Mobile layout-------------------------*/
-/*
-* {
-  border: 2px solid green;
-}*/
 
 .grid-container {
     display: grid;
@@ -63,8 +59,8 @@ body {
         'text-article'
         'attribution';  
     min-width: 37.5rem;
+    justify-self: center;
     justify-items: center;
-  /*border: 2px solid green;*/
 }
 
 /* style 1st component - mobile */
@@ -76,13 +72,11 @@ body {
     justify-items: center;
     width: 75%;
     margin: 2rem 0 0 0 ;
-    /*border: 2px solid green;*/ 
 }
 
 .image-product {
     border-top-left-radius: 0.9rem;
     border-top-right-radius: 0.9rem;
-    /*border: 2px solid green;*/
 }
 
 /* style 2nd component - mobile */
@@ -103,11 +97,6 @@ body {
     border-bottom-right-radius: 0.9rem;
     padding: 2rem;
 }
-
-/*
-.text-article > * {
-    border: 2px solid green;
-}*/
 
 .product-type {
     font-family: var(--ff-primary);
@@ -144,6 +133,7 @@ body {
     font-size: 2.3rem;
     color: var(--dark-cyan);
     justify-self: start;
+    align-self: center;
 }
 
 .old-price {
@@ -161,6 +151,7 @@ body {
     grid-template-areas:
         'add-to-cart';
     justify-self: center;
+    align-self: center;
 }
 
 .add-to-cart {
@@ -196,23 +187,41 @@ body {
 /*---------------------Desktop layout-------------------------*/
 @media screen and (min-width: 48rem) {
 
-  * {
-      display: none;
-  }
+.grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'img-container text-article'
+        'attribution attribution';
+    width: 70rem;
+}
 
 /* style 1st component - desktop */
+.img-container {
+    margin: 0;
+    justify-self: end;
+}
 
+.image-product {
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.9rem;
+}
 
 /* style 2nd component - desktop */
-
+.text-article {
+    justify-self: start;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+}
 
 /* style 3rd component - desktop */
+/* 3rd component is styled in externl file */
 
 }
 
 
 /*------------------grid area names---------------------------*/
-
 .img-container {
   grid-area: img-container;
 }
