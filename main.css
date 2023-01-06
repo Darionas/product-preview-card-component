@@ -46,11 +46,11 @@ body {
     background-color: var(--cream);  
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
 }
 
 /*---------------------Mobile layout-------------------------*/
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -58,8 +58,6 @@ body {
         'img-container'
         'text-article'
         'attribution';  
-    min-width: 37.5rem;
-    justify-self: center;
     justify-items: center;
 }
 
@@ -70,7 +68,7 @@ body {
     grid-template-areas:
         'image-product'; 
     justify-items: center;
-    width: 75%;
+    width: 90%;
     margin: 2rem 0 0 0 ;
 }
 
@@ -91,7 +89,7 @@ body {
         'btn-container';
     gap: 1rem;
     justify-items: start;
-    width: 75%;
+    width: 90%;
     background-color: var(--white);
     border-bottom-left-radius: 0.9rem;
     border-bottom-right-radius: 0.9rem;
@@ -117,6 +115,10 @@ body {
     font-weight: var(--fw-500);
     font-size: 1.4rem;
     color: var(--dark-grayish-blue);
+}
+
+.name {
+  text-transform: uppercase;
 }
 
 .prices {
@@ -145,6 +147,10 @@ body {
     align-self: center;
 }
 
+.sr-only {
+  display: none;
+}
+
 .btn-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -164,12 +170,12 @@ body {
     border: none;
     border-radius: 0.5rem;
     background-color: var(--dark-cyan);
-    min-width: 23rem;
+    width: 20rem;
 }
 
 .image-cart {
     justify-self: end;
-    width: 18%;
+    width: 20%;
 }
 
 .btn-title {
@@ -181,7 +187,9 @@ body {
 }
 
 /* style 3rd component - mobile */
-/* 3rd component is styled in external file */
+.attribution {
+  width: 90%;
+}
 
 
 /*---------------------Desktop layout-------------------------*/
