@@ -27,19 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<<<<<<< HEAD
 ![Product_preview_card_component](./images/product_preview_card_component.png)
-=======
-- [x] Create drawing from design (structure of design)(1st task)
-- [x] Create of repo (2nd task)
-- [x] Create HTML layout (3rd task)
-- [x] Create CSS layout according style guides (4th task)
-- [x] Create grid layout for mobile first (5th task)
-- [x] Craete grid layout for desktop (6th task)
-- [x] Overview of solution and RWD (7th task)
-- [x] Tada it is done. Congratulation you reach your goal.🎉
->>>>>>> 1ce3dca1816ba022d9928796988d79b2cfdf5cd1
-
 
 ### Links
 
